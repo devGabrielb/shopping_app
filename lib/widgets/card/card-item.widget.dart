@@ -16,7 +16,7 @@ class CardItem extends StatelessWidget {
               Navigator.push(
               context,
               MaterialPageRoute(
-                
+                fullscreenDialog: true,
                 builder: (context) => DetailsProduct(),
               ),
               );
@@ -28,7 +28,6 @@ class CardItem extends StatelessWidget {
                   borderRadius: BorderRadius.vertical(top:Radius.circular(24), bottom: Radius.circular(24)),
                   child: Hero(
                     tag: "opa",
-                    transitionOnUserGestures: true,
                     child: Image.asset("assets/img1.jpg", fit:BoxFit.cover,)),
                 ),
               
